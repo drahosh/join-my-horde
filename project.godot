@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Join my horde! A multi-level conquering game"
+run/main_scene="uid://8twhmssfibp3"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+run/max_fps=60
+boot_splash/image="uid://cpl8dn0vpomnn"
+config/icon="uid://de2l28aaiy7y2"
+
+[autoload]
+
+Resources="*uid://cdoavrpm8hd16"
+
+[gui]
+
+theme/custom="res://Ui/theme/horde_theme.tres"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

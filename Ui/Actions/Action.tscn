@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dt4tblb7kylkk"]
+
+[ext_resource type="Script" uid="uid://bd0hub1wcyfr8" path="res://Ui/Actions/action.gd" id="1_ury8t"]
+
+[node name="Action" type="PanelContainer" unique_id=250708135]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+script = ExtResource("1_ury8t")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1027181453]
+layout_mode = 2
+size_flags_vertical = 1
+value = 40.0
+show_percentage = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=728142179]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=1195962120]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "If you are reading this it's a bug"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer" unique_id=1084950897]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "+5 gold
+"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 2
+vertical_alignment = 1
