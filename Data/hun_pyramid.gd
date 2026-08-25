@@ -22,6 +22,18 @@ func count_at(rank: int) -> int:
 	return _counts[rank]
 
 
+func rank_count() -> int:
+	return _counts.size()
+
+
+func max_count() -> int:
+	var m := 0
+	for c in _counts:
+		if c > m:
+			m = c
+	return m
+
+
 func total_huns() -> int:
 	var n := 0
 	for c in _counts:
